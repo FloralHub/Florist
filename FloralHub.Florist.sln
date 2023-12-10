@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FloralHub.Florist.Api", "src\FloralHub.Florist.Api\FloralHub.Florist.Api.csproj", "{CC9FC515-140D-43B3-B4BC-47DC9FD722DD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7EAAD421-BE8D-4BB1-AB4D-311D58EBBED8}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
@@ -13,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloralHub.Florist.Application", "src\FloralHub.Florist.Application\FloralHub.Florist.Application.csproj", "{4CC6D6D8-0BA3-4231-870D-A369D667E7B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FloralHub.Florist.Infrastructure", "src\FloralHub.Florist.Infrastructure\FloralHub.Florist.Infrastructure.csproj", "{22E82C61-CE8B-4B7D-B43D-0A32F4A4829A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloralHub.Florist.Infrastructure", "src\FloralHub.Florist.Infrastructure\FloralHub.Florist.Infrastructure.csproj", "{22E82C61-CE8B-4B7D-B43D-0A32F4A4829A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloralHub.Florist.Contracts", "src\FloralHub.Florist.Contracts\FloralHub.Florist.Contracts.csproj", "{CFF3D489-9F87-43D1-AA19-5CDF26E0D92D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloralHub.Florist.Domain", "src\FloralHub.Florist.Domain\FloralHub.Florist.Domain.csproj", "{F7B97F3F-CC88-4B3A-ABA3-0B120140AD7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloralHub.Florist.Core", "src\FloralHub.Florist.Core\FloralHub.Florist.Core.csproj", "{70690940-7D91-4941-8388-8BA7D7D439AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloralHub.Florist.Entrypoint", "src\FloralHub.Florist.Entrypoint\FloralHub.Florist.Entrypoint.csproj", "{A533E1B1-711E-45FA-BF3F-2F02BCB446BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +25,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CC9FC515-140D-43B3-B4BC-47DC9FD722DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC9FC515-140D-43B3-B4BC-47DC9FD722DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC9FC515-140D-43B3-B4BC-47DC9FD722DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC9FC515-140D-43B3-B4BC-47DC9FD722DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CC6D6D8-0BA3-4231-870D-A369D667E7B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CC6D6D8-0BA3-4231-870D-A369D667E7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CC6D6D8-0BA3-4231-870D-A369D667E7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CC6D6D8-0BA3-4231-870D-A369D667E7B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22E82C61-CE8B-4B7D-B43D-0A32F4A4829A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22E82C61-CE8B-4B7D-B43D-0A32F4A4829A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22E82C61-CE8B-4B7D-B43D-0A32F4A4829A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22E82C61-CE8B-4B7D-B43D-0A32F4A4829A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7B97F3F-CC88-4B3A-ABA3-0B120140AD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7B97F3F-CC88-4B3A-ABA3-0B120140AD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7B97F3F-CC88-4B3A-ABA3-0B120140AD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7B97F3F-CC88-4B3A-ABA3-0B120140AD7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF3D489-9F87-43D1-AA19-5CDF26E0D92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF3D489-9F87-43D1-AA19-5CDF26E0D92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF3D489-9F87-43D1-AA19-5CDF26E0D92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF3D489-9F87-43D1-AA19-5CDF26E0D92D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70690940-7D91-4941-8388-8BA7D7D439AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70690940-7D91-4941-8388-8BA7D7D439AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70690940-7D91-4941-8388-8BA7D7D439AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70690940-7D91-4941-8388-8BA7D7D439AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A533E1B1-711E-45FA-BF3F-2F02BCB446BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A533E1B1-711E-45FA-BF3F-2F02BCB446BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A533E1B1-711E-45FA-BF3F-2F02BCB446BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A533E1B1-711E-45FA-BF3F-2F02BCB446BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
