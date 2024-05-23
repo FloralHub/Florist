@@ -1,4 +1,4 @@
-namespace FloralHub.Florist.Core.Enums;
+namespace AlchemyLub.Florist.Core.Enums;
 
 /// <summary>
 /// Balloon colors.

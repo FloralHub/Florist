@@ -1,4 +1,4 @@
-namespace FloralHub.Florist.Core.Models.Goods;
+namespace AlchemyLub.Florist.Core.Models.Goods;
 
 /// <summary>
 /// Flower bouquet.

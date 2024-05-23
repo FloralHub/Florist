@@ -1,4 +1,4 @@
-namespace FloralHub.Florist.Core.Models;
+namespace AlchemyLub.Florist.Core.Models;
 
 /// <summary>
 /// Store customer.

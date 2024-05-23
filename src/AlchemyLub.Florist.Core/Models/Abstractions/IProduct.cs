@@ -1,4 +1,4 @@
-namespace FloralHub.Florist.Core.Models.Abstractions;
+namespace AlchemyLub.Florist.Core.Models.Abstractions;
 
 public interface IProduct
 {

@@ -1,4 +1,4 @@
-namespace FloralHub.Florist.Core.Enums;
+namespace AlchemyLub.Florist.Core.Enums;
 
 public enum ToyType
 {
